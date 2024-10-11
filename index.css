@@ -1,0 +1,13 @@
+.kerdes{
+    background-color: beige;
+    border: 1px black solid;
+    width: 350px;
+    align-items: center;
+}
+.cim{
+    text-align: center;
+}
+.gomb{
+    margin-left: auto;
+    margin-right: auto;
+}

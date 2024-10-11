@@ -1,0 +1,29 @@
+body{
+    align-items: center;
+}
+h1,h3{
+    text-align: center;
+}
+
+#flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.kerdes{
+    background-color: beige;
+    border: 1px black solid;
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    align-items: center;
+}

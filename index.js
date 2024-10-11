@@ -9,21 +9,37 @@ for(let i=0;i<6;i++){
     let gomb =document.createElement("button");
     let gombdiv= document.createElement("div");
     let szoveg = document.createElement("span");
-    let valasz = document.createElement("span");
+    let valasz = document.createElement("p");
 
     szoveg.innerHTML="<h1>Mi "+ orszagok[i] + " fővárosa?</h1>"
-
-    gombdiv.className="gomb"
+    valasz.innerHTML=""
     div.className="kerdes"
     szoveg.className="cim"
-    gomb.className="gomb"
-    gomb.textContent="Mutat/Elrejt válasz"
+    
+    gomb.innerHTML="Mutat/Elrejt válasz"
+
 
     fodiv.appendChild(div)
     div.appendChild(szoveg);
+    div.appendChild(valasz)
     gombdiv.appendChild(gomb);
     div.appendChild(gombdiv)
-    div.appendChild(valasz)   
+    
+    
+    let jelen=0;
+    gomb.addEventListener('click',function(){
+        
+        if(jelen==0){
+            valasz.innerText=varosok[i];
+            jelen=1
+        }
+        else{
+            valasz.innerText="";
+            jelen=0
+        }
+
+    })
 }
+
 
 

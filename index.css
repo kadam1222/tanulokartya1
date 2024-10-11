@@ -15,16 +15,17 @@ h1,h3{
     background-color: beige;
     border: 1px black solid;
     width: 350px;
-    height: 140px;
+    height: 200px;
     margin-left: 20px;
     margin-right: 20px;
     align-items: center;
 }
 
-.cim{
+p{
     text-align: center;
+    align-items: center;
 }
 
 .gomb{
-    
+
 }

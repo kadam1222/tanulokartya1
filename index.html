@@ -11,37 +11,6 @@
     <h1>Tanulókártya Alkalmazás</h1>
     <h3>Fővárosok</h3>
 
-    <script>
-        let div=document.createElement("div");
-        let gomb =document.createElement("button");
-        let szoveg = document.createElement("span")
-        let valasz = document.createElement("span")
-
-        div.appendChild(szoveg);
-        div.appendChild(gomb);
-        div.appendChild(valasz)
-        document.body.appendChild(div);
-        
-        div.className="kerdes"
-        szoveg.className="cim"
-        gomb.className="gomb"
-        szoveg.innerHTML="<h1>Mi Magyarország fővárosa?</h1>"
-        gomb.textContent="Mutat/Elrejt válasz"
-        
-        let jelen=0;
-        gomb.addEventListener(onclick,function(){
-            if(jelen==1){
-                valasz.textContent="";
-                jelen==0
-            }
-            else{
-                valasz.textContent="Budapest"
-                jelen==1
-            }
-            
-            
-        })
-        
-    </script>
+    <div id="flex-container"></div>
 </body>
 </html>
